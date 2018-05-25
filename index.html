@@ -7,13 +7,19 @@
     <title>Plastilin</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
 </head>
 <body>
     <div class="header">
         <span> The cloud communications solution <br>
              from a Gartner Magic Quadrant Leader</span>
-        <button class="header__btndbk" >Read report</button>
+        <div class="header__buttons">    
+          <button class="header__btndbk" >Read report</button>
+          <button class="header__btndbk2" >View demo</button>
+        </div>   
     </div>
     <div class="content">
         <div class="content__name">
@@ -22,40 +28,91 @@
             <h1>Simple to use</h1>
         </div>
         <div class="content__shape2"></div>
-        <div class="content__svg">
-            <img src="images/vector-smart-object@2x.jpg" alt="">
+           <div class="content__svg">
+              <img class="content__desctopimg" src="images/Asset 1_1.svg" alt="">
+              <img class="content__mobimg1" src="images/Asset_3.svg" alt="">
+           </div>
+        <div class="content__namemob">
+            <button id="url1">Smart design</button>
+            <div class="content__shapemob"></div>
+            <button id="url2">Simple to use</button>
         </div>
-        <div class="content__text">
-            <div class="content__faq">
-               <p>The wires of old are gone, so you’re </p>
-               <p> never tied to a single location, </p>
-               <p> device, or your desk.</p>
-            </div>   
-            <button class="content__dbk" ></button>
-            <div class="content__faq">
-               <p>Your cloud phone system follows </p>
-               <p> you wherever you go, so you </p>
-               <p> never miss a call.</p>
-             </div>
-        </div>
+            <div class="content__text">
+               <div class="content__faq1">
+                  <p>The wires of old are gone, so you’re </p>
+                  <p> never tied to a single location, </p>
+                  <p> device, or your desk.</p>
+              </div>   
+              <button class="content__dbk" ></button>
+              <div class="content__faq2">
+                  <p>Your cloud phone system follows </p>
+                  <p> you wherever you go, so you </p>
+                  <p> never miss a call.</p>
+              </div>
+            </div>
         <div class="content__shape3"></div>
         <div class="content__svg">
-            <img src="images/vector-smart-object1@2x.jpg" alt="">
+            <img class="content__desctopimg" src="images/Asset2.svg" alt="">
+            <img class="content__mobimg2" src="images/Asset_3.svg" alt="">
         </div>
         <div class="content__text">
-                <div class="content__faq">
-                   <p>The technology is seamlessly wrapped  </p>
-                   <p>up in a remarkably intuitive interface  </p>
-                   <p>that works across desk phones, </p>
-                   <p>smartphones, tablets, and computers.</p>
-                </div>   
+            <div class="content__faq1">
+                <p>The technology is seamlessly wrapped  </p>
+                <p>up in a remarkably intuitive interface  </p>
+                <p>that works across desk phones, </p>
+                <p>smartphones, tablets, and computers.</p>
+             </div>   
                 <button class="content__dbk" ></button>
-                <div class="content__faq">
-                   <p>Setup, management, and use are  </p>
-                   <p> brilliantly easy, but there’s dedicated  </p>
-                   <p> support whenever you need assistance.</p>
-                 </div>
+            <div class="content__faq2">
+                <p>Setup, management, and use are  </p>
+                <p> brilliantly easy, but there’s dedicated  </p>
+                <p> support whenever you need assistance.</p>
+             </div>
         </div>
-    </div>
+    </div>  
+    <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="content__text1">
+                  <div class="content__faq1">
+                     <p>The wires of old are gone, so you’re </p>
+                     <p> never tied to a single location, </p>
+                     <p> device, or your desk.</p>
+                 </div>   
+                 <div class="content__faq2">
+                     <p>Your cloud phone system follows </p>
+                     <p> you wherever you go, so you </p>
+                     <p> never miss a call.</p>
+                 </div>
+               </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content__text2">
+                  <div class="content__faq1">
+                        <p>The technology is seamlessly wrapped  </p>
+                        <p>up in a remarkably intuitive interface  </p>
+                        <p>that works across desk phones, </p>
+                        <p>smartphones, tablets, and computers.</p>
+                 </div>   
+                 <div class="content__faq2">
+                        <p>Setup, management, and use are  </p>
+                        <p> brilliantly easy, but there’s dedicated  </p>
+                        <p> support whenever you need assistance.</p>
+                 </div>
+               </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+         <div class="swiper-pagination"></div>
+
+    <script src="js/js.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+            var swiper = new Swiper('.swiper-container', {
+              pagination: {
+                el: '.swiper-pagination',
+              },
+            });
+    </script>
 </body>
 </html>

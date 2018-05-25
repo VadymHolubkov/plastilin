@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    $("#url1").click(function(){
+        $(".content__faq2").hide();
+    });
+    $("#url1").click(function(){
+        $(".content__faq1").show();
+    });
+    $("#url2").click(function(){
+        $(".content__faq1").hide();
+    });
+    $("#url2").click(function(){
+        $(".content__faq2").show();
+    });
+});
